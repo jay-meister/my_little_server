@@ -7,7 +7,7 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 ### Run benchmark:
 
-`cd apps/core && mix run benchmark.exs && cd ../..`
+`mix run benchmark.exs`
 
 ### Run tests:
 `mix test`

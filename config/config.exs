@@ -8,11 +8,11 @@
 use Mix.Config
 
 # Configures the endpoint
-config :semiprimes, SemiprimesWeb.Endpoint,
+config :my_server, MyServerWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "fSXqwDuT1lqPXq1DLLvXog7xI+Mg9f6optwiurnQRfKBTPK2EQSARiqL+JDA2hoM",
-  render_errors: [view: SemiprimesWeb.ErrorView, accepts: ~w(html json), layout: false],
-  pubsub_server: Semiprimes.PubSub,
+  render_errors: [view: MyServerWeb.ErrorView, accepts: ~w(html json), layout: false],
+  pubsub_server: MyServer.PubSub,
   live_view: [signing_salt: "/8jFJwZp"]
 
 # Configures Elixir's Logger

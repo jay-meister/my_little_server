@@ -1,4 +1,4 @@
-defmodule SemiprimesWeb.ConnCase do
+defmodule MyServerWeb.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
@@ -11,7 +11,7 @@ defmodule SemiprimesWeb.ConnCase do
   we enable the SQL sandbox, so changes done to the database
   are reverted at the end of every test. If you are using
   PostgreSQL, you can even run database tests asynchronously
-  by setting `use SemiprimesWeb.ConnCase, async: true`, although
+  by setting `use MyServerWeb.ConnCase, async: true`, although
   this option is not recommended for other databases.
   """
 
@@ -22,12 +22,12 @@ defmodule SemiprimesWeb.ConnCase do
       # Import conveniences for testing with connections
       import Plug.Conn
       import Phoenix.ConnTest
-      import SemiprimesWeb.ConnCase
+      import MyServerWeb.ConnCase
 
-      alias SemiprimesWeb.Router.Helpers, as: Routes
+      alias MyServerWeb.Router.Helpers, as: Routes
 
       # The default endpoint for testing
-      @endpoint SemiprimesWeb.Endpoint
+      @endpoint MyServerWeb.Endpoint
     end
   end
 

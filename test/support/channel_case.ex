@@ -1,4 +1,4 @@
-defmodule SemiprimesWeb.ChannelCase do
+defmodule MyServerWeb.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -11,7 +11,7 @@ defmodule SemiprimesWeb.ChannelCase do
   we enable the SQL sandbox, so changes done to the database
   are reverted at the end of every test. If you are using
   PostgreSQL, you can even run database tests asynchronously
-  by setting `use SemiprimesWeb.ChannelCase, async: true`, although
+  by setting `use MyServerWeb.ChannelCase, async: true`, although
   this option is not recommended for other databases.
   """
 
@@ -21,10 +21,10 @@ defmodule SemiprimesWeb.ChannelCase do
     quote do
       # Import conveniences for testing with channels
       import Phoenix.ChannelTest
-      import SemiprimesWeb.ChannelCase
+      import MyServerWeb.ChannelCase
 
       # The default endpoint for testing
-      @endpoint SemiprimesWeb.Endpoint
+      @endpoint MyServerWeb.Endpoint
     end
   end
 

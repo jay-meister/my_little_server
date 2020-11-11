@@ -1,9 +1,9 @@
-defmodule Semiprimes.MixProject do
+defmodule MyServer.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :semiprimes,
+      app: :my_server,
       version: "0.1.0",
       elixir: "~> 1.7",
       elixirc_paths: elixirc_paths(Mix.env()),
@@ -19,7 +19,7 @@ defmodule Semiprimes.MixProject do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      mod: {Semiprimes.Application, []},
+      mod: {MyServer.Application, []},
       extra_applications: [:logger, :runtime_tools]
     ]
   end
@@ -40,7 +40,7 @@ defmodule Semiprimes.MixProject do
       {:telemetry_poller, "~> 0.4"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
-      {:programmai, path: "./apps/core/"}
+      {:benchee, "~> 1.0", only: :dev}
     ]
   end
 
