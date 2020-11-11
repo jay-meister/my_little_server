@@ -17,10 +17,7 @@ defmodule SemiprimesWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    post "/", PageController, :check
   end
 
-  # Other scopes may use custom stacks.
-  # scope "/api", SemiprimesWeb do
-  #   pipe_through :api
-  # end
 end

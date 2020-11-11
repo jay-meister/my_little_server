@@ -4,4 +4,7 @@ defmodule SemiprimesWeb.PageController do
   def index(conn, _params) do
     render(conn, "index.html")
   end
+
+  def check(conn, %{"check" => number}) do
+  end
 end
