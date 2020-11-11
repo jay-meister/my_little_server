@@ -26,7 +26,7 @@ defmodule Semiprimes.MixProject do
 
   # Specifies which paths to compile per environment.
   defp elixirc_paths(:test), do: ["lib", "test/support"]
-  defp elixirc_paths(_), do: ["lib"]
+  defp elixirc_paths(_), do: ["lib", "apps"]
 
   # Specifies your project dependencies.
   #
@@ -39,7 +39,8 @@ defmodule Semiprimes.MixProject do
       {:telemetry_metrics, "~> 0.4"},
       {:telemetry_poller, "~> 0.4"},
       {:jason, "~> 1.0"},
-      {:plug_cowboy, "~> 2.0"}
+      {:plug_cowboy, "~> 2.0"},
+      {:programmai, path: "./apps/core/"}
     ]
   end
 

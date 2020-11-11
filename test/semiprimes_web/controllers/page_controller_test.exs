@@ -9,5 +9,6 @@ defmodule SemiprimesWeb.PageControllerTest do
   test "POST /", %{conn: conn} do
     conn = post(conn, "/", %{"check" => "0"})
     assert html_response(conn, 200) =~ "Your input"
+    assert html_response(conn, 200) =~ "enter a positive integer less than"
   end
 end
